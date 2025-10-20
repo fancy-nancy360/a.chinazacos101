@@ -1,0 +1,24 @@
+// Rust program to calculate the area of a 
+//triangle for a given base and height 
+
+use std::io;
+
+fn main() 
+{
+     let mut input1 = String::new();
+     let mut input2 = String::new();
+    
+    println!("Enter base: ");
+    io::stdin().read_line(&mut input1).expect("Not a valid string");
+    let a:f32 = input1.trim().parse().expect("Not a valid number");
+
+    println!("Enter height: ");
+     io::stdin().read_line(&mut input2).expect("Not a valid string");
+    let b:f32 = input2.trim().parse().expect("Not a valid number");
+
+    if a > 0.0 {
+         let area:f32 = (a * b) / 2.0;
+         println!("Area of triangle: {}", area );
+    }
+}
+
