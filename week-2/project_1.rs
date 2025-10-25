@@ -7,5 +7,5 @@ fn main(){
     let a = p * ( 1.0 + (r / 100.0)).powf(t);
     println!("Amount is {:.2}", a );
     let ci = a-p;
-    println!("Compound Interest is {:.2}", ci );
+    println!("Compound Interest is {:.2}", ci );pro
 }
