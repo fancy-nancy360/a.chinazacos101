@@ -1,7 +1,7 @@
 use std::io;
 
 fn main() {
-    // Input: experience
+    
     let mut experience = String::new();
     println!("Is the employee experienced? (yes/no): ");
     io::stdin().read_line(&mut experience).expect("Failed to read input");
@@ -13,7 +13,6 @@ fn main() {
     io::stdin().read_line(&mut age_input).expect("Failed to read input");
     let age: u32 = age_input.trim().parse().expect("Please enter a valid number");
 
-    // Determine incentive
     let incentive: u32;
 
     if experience == "yes" {
