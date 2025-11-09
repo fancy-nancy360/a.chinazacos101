@@ -1,6 +1,7 @@
 use std::io;
 
 fn main() {
+    println!("===============================");
     println!("         FOOD MENU");
     println!("===============================");
     println!("P = Poundo Yam & Edinkaiko Soup   ₦3,200");
@@ -46,12 +47,13 @@ fn main() {
     }
 
     // Display total
+    println!("\n===============================");
     println!("ORDER SUMMARY");
     println!("===============================");
     println!("Food Type: {}", food_type);
     println!("Quantity: {}", quantity);
     println!("Total: {}", total);
     println!("===============================");
-    println!("Thank you!");
+    println!("Thank you ");
 }
 
